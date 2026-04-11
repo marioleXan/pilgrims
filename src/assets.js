@@ -1,0 +1,20 @@
+// ── DESKTOP ASSETS ────────────────────────────────────────────────────────────
+export const IMG_LOGO           = "https://www.figma.com/api/mcp/asset/586d3756-b876-4e8c-89fd-fb3c04aa62ee";
+export const IMG_HERO_BG        = "https://www.figma.com/api/mcp/asset/f1005069-9f3f-4b7e-afef-82f97ce4a08f";
+export const IMG_CAMP_DECOR     = "https://www.figma.com/api/mcp/asset/4b822e47-4ce4-4365-a922-a241c1ad2783";
+export const IMG_S2_PHOTO       = "https://www.figma.com/api/mcp/asset/e3f5bf1c-3e57-46a2-bee8-1633637a0ad5";
+export const IMG_KIDS_MASK      = "https://www.figma.com/api/mcp/asset/625054a7-4aaf-40f2-b7d5-8ea175707905";
+export const IMG_TESTI_1        = "https://www.figma.com/api/mcp/asset/298463d8-c761-4f69-a997-6226e689ce1a";
+export const IMG_TESTI_2        = "https://www.figma.com/api/mcp/asset/3ad266b6-1c7c-4377-822b-15cd612ab90d";
+export const IMG_TESTI_3        = "https://www.figma.com/api/mcp/asset/01270c01-75d4-4013-9296-311b19b843dd";
+export const IMG_CTA_CHAR       = "https://www.figma.com/api/mcp/asset/33f5bf51-b56f-4551-9b7e-cf56ae4f5440";
+
+// ── MOBILE ASSETS ─────────────────────────────────────────────────────────────
+export const IMG_LOGO_M         = "https://www.figma.com/api/mcp/asset/b1eca504-63e4-435b-a5f1-014e39a4c563";
+export const IMG_HERO_BG_M      = "https://www.figma.com/api/mcp/asset/04ed2e10-08ea-4285-8ef0-4890df96f410";
+export const IMG_S2_PHOTO_M     = "https://www.figma.com/api/mcp/asset/7e044130-41ec-4c4b-8e4f-a70a7d3f7911";
+export const IMG_CAMP_DECOR_M   = "https://www.figma.com/api/mcp/asset/ada21da4-49fd-49bd-b839-fd9e5fb49932";
+export const IMG_CTA_CHAR_M     = "https://www.figma.com/api/mcp/asset/0027b037-fcde-4777-879d-5d11fff476a6";
+export const IMG_TESTI_M1       = "https://www.figma.com/api/mcp/asset/0f4f1771-bc37-41f9-9134-5e497673a3be";
+export const IMG_TESTI_M2       = "https://www.figma.com/api/mcp/asset/17c2c9ca-10e1-47fe-96b8-5a4551ea1c18";
+export const IMG_TESTI_M3       = "https://www.figma.com/api/mcp/asset/e28171e8-064d-4950-867a-4a64402bafc3";
