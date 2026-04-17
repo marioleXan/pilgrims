@@ -591,9 +591,9 @@ export function Section6() {
 
 // ─── SECTION 7 — TESTIMONIALE ─────────────────────────────────────────────────
 const TESTIMONIALS = [
-  { quote: '"Maria s-a întors din tabără mai încrezătoare și mai responsabilă. Ne-au plăcut enorm pozele zilnice și faptul că am știut mereu că este pe mâini bune."', name: 'Elena Constantinescu', role: 'Mama Mariei (8 ani)',   photo: IMG_TESTI_1, left: 128 },
-  { quote: '"Prima tabără pentru Andrei a fost o reușită totală. N-a vrut să mai plece acasă! Echipa Pilgrims are un mod magic de a se conecta cu cei mici."',        name: 'Radu Ionescu',         role: 'Tatăl lui Andrei (6 ani)', photo: IMG_TESTI_2, left: 532 },
-  { quote: '"Recomand din tot sufletul. Valorile pe care le promovează Pilgrims sunt exact ce căutam pentru fetița mea: respect, creativitate și multă mișcare."',    name: 'Simona Popescu',       role: 'Mama Ioanei (10 ani)',    photo: IMG_TESTI_3, left: 937 },
+  { quote: '"Am organizat o excursie de vis pentru copii împreună cu Pilgrims. Faptul că fetele Pilgrims au fost empatice și au răspuns nevoilor copiilor cu răbdare și blândețe, a făcut o mare diferență pentru noi educatoarele. Am fost liniștite și am reușit să ne distrăm de minune cu micuții noștri. Ne-am întors cu mic cu mare cu o experiență minunată. Abia așteptăm următoarea ieșire."', name: 'Marie Madeleine Olteanu', role: 'Educatoare', photo: '/testi_marie.jpg', left: 128 },
+  { quote: '"Am avut o experiență foarte frumoasă alături de echipa Pilgrims! Organizează excursii pentru preșcolari și școlari într-un mod foarte bine pus la punct, iar monitorii sunt extrem de implicați și atenți la toate nevoile copiilor. Pe tot parcursul activităților, copiii au fost în siguranță, bine supravegheați și mereu antrenați în jocuri și activități interesante. Recomand cu drag această echipă!"', name: 'Danny Petrut Nicola', role: 'Părinte', photo: '/testi_danny.jpg', left: 532 },
+  { quote: '"O excursie de 1 zi — cea mai tare zi! Am avut plăcerea să cunoaștem o echipă extraordinară, implicată și mereu gata să ajute. Entuziasmul lor este contagios, iar grija pentru copii și siguranța lor, excepțională. Mă bucur tare că v-am descoperit, Pilgrims! Așteptăm cu nerăbdare următoarea excursie. Mulțumim din suflet!"', name: 'Nicolescu Alexandra', role: 'Părinte', photo: '/testi_alexandra.jpg', left: 937 },
 ];
 
 export function Section7() {
