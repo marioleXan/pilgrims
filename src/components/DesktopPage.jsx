@@ -599,7 +599,7 @@ const TESTIMONIALS = [
 export function Section7() {
   return (
     <Canvas
-      height={649}
+      height={900}
       style={{
         background: 'linear-gradient(10.45deg, #427e3e 5.49%, #0e272c 68.77%)',
         borderTop: '1px solid rgba(244,240,205,0.15)',
@@ -621,7 +621,7 @@ export function Section7() {
       {TESTIMONIALS.map(({ quote, name, role, photo, left }) => (
         <div key={name} style={{
           position: 'absolute', left, top: 246,
-          width: 375, height: 307,
+          width: 375,
           backgroundColor: '#0e272c',
           border: '1px solid rgba(66,126,62,0.3)',
           borderRadius: 12,
@@ -638,7 +638,7 @@ export function Section7() {
           </div>
           <p style={{
             fontFamily: "'Inter',sans-serif", fontStyle: 'italic',
-            fontWeight: 400, fontSize: 18, lineHeight: '29px',
+            fontWeight: 400, fontSize: 16, lineHeight: '27px',
             color: '#f4f0cd', marginBottom: 24, maxWidth: 295,
           }}>{quote}</p>
           <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
