@@ -19,7 +19,7 @@ const YouTubeIcon = ({ size = 18, color = '#f4f0cd' }) => (
 );
 import {
   IMG_LOGO, IMG_HERO_BG, IMG_CAMP_DECOR, IMG_S2_PHOTO,
-  IMG_KIDS_MASK, IMG_TESTI_1, IMG_TESTI_2, IMG_TESTI_3, IMG_CTA_CHAR
+  IMG_KIDS_MASK, IMG_CTA_CHAR
 } from '../assets';
 
 // ─── CANVAS: 1440px centrat ───────────────────────────────────────────────────
@@ -599,7 +599,7 @@ const TESTIMONIALS = [
 export function Section7() {
   return (
     <Canvas
-      height={900}
+      height={932}
       style={{
         background: 'linear-gradient(10.45deg, #427e3e 5.49%, #0e272c 68.77%)',
         borderTop: '1px solid rgba(244,240,205,0.15)',
@@ -621,12 +621,13 @@ export function Section7() {
       {TESTIMONIALS.map(({ quote, name, role, photo, left }) => (
         <div key={name} style={{
           position: 'absolute', left, top: 246,
-          width: 375,
+          width: 375, height: 440,
           backgroundColor: '#0e272c',
           border: '1px solid rgba(66,126,62,0.3)',
           borderRadius: 12,
           padding: '40px 40px 32px',
           overflow: 'visible',
+          display: 'flex', flexDirection: 'column', justifyContent: 'space-between',
         }}>
           <div style={{
             position: 'absolute', top: -22, left: 32,
@@ -639,7 +640,7 @@ export function Section7() {
           <p style={{
             fontFamily: "'Inter',sans-serif", fontStyle: 'italic',
             fontWeight: 400, fontSize: 16, lineHeight: '27px',
-            color: '#f4f0cd', marginBottom: 24, maxWidth: 295,
+            color: '#f4f0cd', maxWidth: 295,
           }}>{quote}</p>
           <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
             <div style={{ width: 48, height: 48, borderRadius: 9999, overflow: 'hidden', flexShrink: 0 }}>
