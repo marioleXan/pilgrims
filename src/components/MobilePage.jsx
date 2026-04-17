@@ -3,8 +3,20 @@ import {
   TreePine, Clock, Map, Users, Smile, PawPrint,
   BookOpen, Flame, Compass, ShieldCheck, Smartphone,
   Heart, Quote, Sparkles, ArrowRight,
-  Facebook, Instagram, Music2, Menu, Mail, Phone, MapPin
+  Facebook, Instagram, Menu, Mail, Phone, MapPin
 } from 'lucide-react';
+
+const TikTokIcon = ({ size = 16, color = '#f4f0cd' }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill={color}>
+    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.2 8.2 0 0 0 4.79 1.53V6.77a4.85 4.85 0 0 1-1.02-.08z"/>
+  </svg>
+);
+
+const YouTubeIcon = ({ size = 16, color = '#f4f0cd' }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill={color}>
+    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+  </svg>
+);
 import {
   IMG_LOGO_M, IMG_HERO_BG_M, IMG_S2_PHOTO_M, IMG_CAMP_DECOR_M,
   IMG_CTA_CHAR_M, IMG_TESTI_M1, IMG_TESTI_M2, IMG_TESTI_M3,
@@ -197,6 +209,15 @@ export default function MobilePage() {
               borderBottom: '1px solid rgba(244,240,205,0.1)',
             }}>{label}</a>
           ))}
+          <a href="tel:0769037702" onClick={() => setMenuOpen(false)} style={{
+            display: 'flex', alignItems: 'center', gap: 10,
+            padding: '12px 0',
+            ...s.inter(500, 16, '24px', '#f4f0cd'),
+            borderBottom: '1px solid rgba(244,240,205,0.1)',
+          }}>
+            <Phone size={16} color="#f4f0cd" strokeWidth={1.5} />
+            <span>0769 037 702</span>
+          </a>
           <a href="https://www.facebook.com/PilgrimsTM" target="_blank" rel="noopener noreferrer" style={{
             marginTop: 16, width: '100%', height: 48,
             backgroundColor: '#5ca148', borderRadius: 24,
@@ -241,20 +262,22 @@ export default function MobilePage() {
         }}>Tabere în natură unde jocul, explorarea și relațiile autentice devin parte din procesul de creștere a copilului tău.</p>
 
         {/* Buton primar */}
-        <button style={{
+        <a href="https://www.facebook.com/reel/1659221595082500" target="_blank" rel="noopener noreferrer" style={{
           position: 'absolute', left: 35, right: 35, top: 380, height: 56,
-          backgroundColor: '#5ca148', borderRadius: 28, border: 'none',
+          backgroundColor: '#5ca148', borderRadius: 28,
           ...s.inter(700, 16, '26px', '#ffffff'),
           boxShadow: '0px 8px 17px rgba(92,162,73,0.2)',
-        }}>Descoperă taberele Pilgrims</button>
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
+        }}>Descoperă taberele Pilgrims</a>
 
         {/* Buton secundar */}
-        <button style={{
+        <a href="https://www.instagram.com/pilgrims_ro/" target="_blank" rel="noopener noreferrer" style={{
           position: 'absolute', left: 35, right: 35, top: 448, height: 56,
           backdropFilter: 'blur(2px)', backgroundColor: 'rgba(255,255,255,0.1)',
           border: '1px solid rgba(255,255,255,0.3)', borderRadius: 28,
           ...s.inter(400, 16, '26px', '#ffffff'),
-        }}>Vezi activitățile</button>
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
+        }}>Vezi activitățile</a>
       </div>
 
       {/* ── SECTION 2 — Problem ── */}
@@ -359,11 +382,12 @@ export default function MobilePage() {
             <div style={{ ...s.inter(700, 16, '24px', '#5ca148') }}>{value}</div>
           </div>
         ))}
-        <button style={{
+        <a href="/program_tabere_2026.pdf" target="_blank" rel="noopener noreferrer" style={{
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
           width: '100%', height: 56, backgroundColor: 'transparent',
           border: '2px solid #5ca148', borderRadius: 28,
           ...s.inter(700, 16, '26px', '#5ca148'), marginBottom: 48,
-        }}>Descarcă programul complet</button>
+        }}>Descarcă programul complet</a>
 
         <h2 style={{ textAlign: 'center', ...s.quickBold(30, '38px', '#f4f0cd'), marginBottom: 12 }}>Valorile Pilgrims</h2>
         <p style={{ textAlign: 'center', ...s.inter(400, 16, '24px', '#bdc1ca'), width: 273, margin: '0 auto 32px' }}>
@@ -434,27 +458,27 @@ export default function MobilePage() {
         }}>
           <div style={{ position: 'absolute', top: -67, right: 0, width: 256, height: 256, backgroundColor: 'rgba(92,162,73,0.2)', borderRadius: 128, filter: 'blur(64px)' }} />
           <div style={{ position: 'absolute', bottom: 0, left: -80, width: 256, height: 256, backgroundColor: 'rgba(92,162,73,0.15)', borderRadius: 128, filter: 'blur(64px)' }} />
-          <h2 style={{ position: 'relative', textAlign: 'center', ...s.quickBold(30, '36px', '#f4f0cd'), width: 268, margin: '0 auto 24px' }}>
+          <h2 style={{ position: 'relative', textAlign: 'center', ...s.quickBold(30, '36px', '#f4f0cd'), width: '100%', margin: '0 auto 24px' }}>
             Oferă copilului tău o experiență care îl ajută să crească frumos.
           </h2>
-          <p style={{ position: 'relative', textAlign: 'center', ...s.inter(400, 16, '22px', '#bdc1ca'), width: 278, margin: '0 auto 32px' }}>
+          <p style={{ position: 'relative', textAlign: 'center', ...s.inter(400, 16, '22px', '#bdc1ca'), width: '100%', margin: '0 auto 32px' }}>
             Locurile în taberele Pilgrims se ocupă rapid. Rezervă acum un loc și fii parte din povestea noastră de creștere.
           </p>
-          <button style={{
-            position: 'relative', display: 'block', width: 279, height: 56, margin: '0 auto 12px',
-            backgroundColor: '#ffffff', borderRadius: 28, border: 'none',
+          <a href="https://www.facebook.com/reel/1659221595082500" target="_blank" rel="noopener noreferrer" style={{
+            position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center',
+            width: '100%', height: 56, margin: '0 auto 12px',
+            backgroundColor: '#ffffff', borderRadius: 28,
             fontFamily: "'Nunito Sans',sans-serif", fontWeight: 700, fontSize: 18, color: '#1c62a8',
             boxShadow: '0px 8px 17px rgba(92,162,73,0.2)',
-          }}>Rezervă un loc</button>
-          <button style={{
+          }}>Rezervă un loc</a>
+          <a href="/program_tabere_2026.pdf" target="_blank" rel="noopener noreferrer" style={{
             position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8,
-            width: 279, height: 56, margin: '0 auto',
-            backgroundColor: 'transparent', border: 'none',
+            width: '100%', height: 56, margin: '0 auto',
             fontFamily: "'Nunito Sans',sans-serif", fontWeight: 600, fontSize: 16, color: '#f3f4f6',
           }}>
             <span>Vezi taberele disponibile</span>
             <ArrowRight size={16} color="#f3f4f6" strokeWidth={2} />
-          </button>
+          </a>
         </div>
       </div>
 
@@ -469,27 +493,34 @@ export default function MobilePage() {
           Tabere educaționale pentru o copilărie autentică, trăită în ritmul naturii și al curiozității.
         </p>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, marginBottom: 24 }}>
-          {[
-            { Icon: Mail,    text: 'Salut@pilgrims.ro' },
-            { Icon: Phone,   text: '0769 037 702' },
-            { Icon: MapPin,  text: 'Timișoara, România' },
-          ].map(({ Icon, text }) => (
-            <div key={text} style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-              <Icon size={14} color="#bdc1ca" strokeWidth={1.5} />
-              <span style={{ ...s.inter(400, 12, '20px', '#bdc1ca') }}>{text}</span>
-            </div>
-          ))}
+          <a href="mailto:infocontact.pilgrims@gmail.com" style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+            <Mail size={14} color="#bdc1ca" strokeWidth={1.5} />
+            <span style={{ ...s.inter(400, 12, '20px', '#bdc1ca') }}>infocontact.pilgrims@gmail.com</span>
+          </a>
+          <a href="tel:0769037702" style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+            <Phone size={14} color="#bdc1ca" strokeWidth={1.5} />
+            <span style={{ ...s.inter(400, 12, '20px', '#bdc1ca') }}>0769 037 702</span>
+          </a>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+            <MapPin size={14} color="#bdc1ca" strokeWidth={1.5} />
+            <span style={{ ...s.inter(400, 12, '20px', '#bdc1ca') }}>Timișoara, România</span>
+          </div>
         </div>
         <div style={{ display: 'flex', justifyContent: 'center', gap: 12, marginBottom: 24 }}>
           {[
             { Icon: Facebook,  href: 'https://www.facebook.com/PilgrimsTM' },
             { Icon: Instagram, href: 'https://www.instagram.com/pilgrims_ro/' },
-            { Icon: Music2,    href: '#' },
           ].map(({ Icon, href }) => (
             <a key={href} href={href} target="_blank" rel="noopener noreferrer" style={{ width: 40, height: 40, backgroundColor: '#0e272c', border: '1px solid rgba(92,161,72,0.3)', borderRadius: 20, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <Icon size={16} color="#f4f0cd" strokeWidth={1.5} />
             </a>
           ))}
+          <a href="https://www.tiktok.com/@pilgrims.ro?_r=1&_t=ZN-95auEazNbE6" target="_blank" rel="noopener noreferrer" style={{ width: 40, height: 40, backgroundColor: '#0e272c', border: '1px solid rgba(92,161,72,0.3)', borderRadius: 20, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <TikTokIcon size={16} />
+          </a>
+          <a href="https://youtube.com/@pilgrimsro?si=AUmqTSiVuWvnr6V5" target="_blank" rel="noopener noreferrer" style={{ width: 40, height: 40, backgroundColor: '#0e272c', border: '1px solid rgba(92,161,72,0.3)', borderRadius: 20, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <YouTubeIcon size={16} />
+          </a>
         </div>
         <div style={{ borderTop: '1px solid rgba(244,240,205,0.1)', paddingTop: 16 }}>
           {['Termeni și condiții', 'Politica de confidențialitate'].map(l => (

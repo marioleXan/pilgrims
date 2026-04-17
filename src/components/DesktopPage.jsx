@@ -3,8 +3,20 @@ import {
   TreePine, Clock, Map, Users, Smile, PawPrint,
   BookOpen, Flame, Compass, ShieldCheck, Smartphone,
   Heart, Quote, Sparkles, ArrowRight,
-  Facebook, Instagram, Music2
+  Facebook, Instagram, Phone
 } from 'lucide-react';
+
+const TikTokIcon = ({ size = 18, color = '#f4f0cd' }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill={color}>
+    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.2 8.2 0 0 0 4.79 1.53V6.77a4.85 4.85 0 0 1-1.02-.08z"/>
+  </svg>
+);
+
+const YouTubeIcon = ({ size = 18, color = '#f4f0cd' }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill={color}>
+    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+  </svg>
+);
 import {
   IMG_LOGO, IMG_HERO_BG, IMG_CAMP_DECOR, IMG_S2_PHOTO,
   IMG_KIDS_MASK, IMG_TESTI_1, IMG_TESTI_2, IMG_TESTI_3, IMG_CTA_CHAR
@@ -92,6 +104,16 @@ export function Nav() {
           fontSize: 14, color: '#0e272c', whiteSpace: 'nowrap',
           display: 'flex', alignItems: 'center', justifyContent: 'center',
         }}>Înscrie-te acum</a>
+        <a href="tel:0769037702" style={{
+          position: 'absolute', left: 1308, top: 20,
+          width: 40, height: 40,
+          backgroundColor: 'rgba(255,255,255,0.08)',
+          border: '1px solid rgba(244,240,205,0.2)',
+          borderRadius: 20,
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
+        }}>
+          <Phone size={18} color="#f4f0cd" strokeWidth={1.5} />
+        </a>
       </div>
     </nav>
   );
@@ -171,22 +193,23 @@ export function Hero() {
           Tabere în natură unde jocul, explorarea și relațiile autentice devin parte din procesul de creștere a copilului tău.
         </p>
 
-        <button style={{
+        <a href="https://www.facebook.com/reel/1659221595082500" target="_blank" rel="noopener noreferrer" style={{
           position: 'absolute', left: 435, top: 467, width: 333, height: 56,
-          backgroundColor: '#5ca148', borderRadius: 28, border: 'none',
+          backgroundColor: '#5ca148', borderRadius: 28,
           boxShadow: '0px 16px 32px rgba(92,161,72,0.2)',
           fontFamily: "'Inter',sans-serif", fontWeight: 700, fontSize: 18, color: '#ffffff',
-        }}>Descoperă taberele Pilgrims</button>
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
+        }}>Descoperă taberele Pilgrims</a>
 
-        {/* Buton secundar — left:784 top:467 w:220 h:56 */}
-        <button style={{
+        <a href="https://www.instagram.com/pilgrims_ro/" target="_blank" rel="noopener noreferrer" style={{
           position: 'absolute', left: 784, top: 467, width: 220, height: 56,
           backdropFilter: 'blur(2px)',
           backgroundColor: 'rgba(255,255,255,0.1)',
           border: '1px solid rgba(255,255,255,0.3)',
-          borderRadius: 28, border: '1px solid rgba(255,255,255,0.3)',
+          borderRadius: 28,
           fontFamily: "'Inter',sans-serif", fontWeight: 700, fontSize: 18, color: '#ffffff',
-        }}>Vezi activitățile</button>
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
+        }}>Vezi activitățile</a>
       </Canvas>
     </div>
   );
@@ -508,13 +531,13 @@ export function Section6() {
         </div>
       ))}
 
-      <button style={{
+      <a href="/program_tabere_2026.pdf" target="_blank" rel="noopener noreferrer" style={{
         position: 'absolute', left: 128, top: 540, width: 344, height: 56,
         backgroundColor: 'transparent',
         border: '2px solid #5ca148', borderRadius: 28,
         fontFamily: "'Inter',sans-serif", fontWeight: 700, fontSize: 16, color: '#5ca148',
-        overflow: 'hidden',
-      }}>Descarcă programul complet</button>
+        display: 'flex', alignItems: 'center', justifyContent: 'center',
+      }}>Descarcă programul complet</a>
 
       {/* ── DREAPTA — Valori ── */}
       <h2 style={{
@@ -676,24 +699,24 @@ export function SectionCTA() {
         }}>Locurile în taberele Pilgrims se ocupă rapid. Rezervă acum un loc și fii parte din povestea noastră de creștere.</p>
 
         {/* Buton alb — left:257 top:312 w:240 h:64 */}
-        <button style={{
+        <a href="https://www.facebook.com/reel/1659221595082500" target="_blank" rel="noopener noreferrer" style={{
           position: 'absolute', left: 257, top: 312, width: 240, height: 64,
-          backgroundColor: '#ffffff', borderRadius: 32, border: 'none',
+          backgroundColor: '#ffffff', borderRadius: 32,
           fontFamily: "'Inter',sans-serif", fontWeight: 700, fontSize: 20, color: '#1c62a8',
           boxShadow: '0px 4px 7px rgba(23,26,31,0.13)',
-        }}>Rezervă un loc</button>
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
+        }}>Rezervă un loc</a>
 
         {/* Link text cu săgeată — left:528 top:330 */}
-        <button style={{
+        <a href="/program_tabere_2026.pdf" target="_blank" rel="noopener noreferrer" style={{
           position: 'absolute', left: 528, top: 330,
           display: 'flex', alignItems: 'center', gap: 8,
-          backgroundColor: 'transparent', border: 'none',
           fontFamily: "'Inter',sans-serif", fontWeight: 500, fontSize: 18, color: '#ffffff',
           whiteSpace: 'nowrap',
         }}>
           <span>Vezi taberele disponibile</span>
           <ArrowRight size={20} color="#ffffff" strokeWidth={2} />
-        </button>
+        </a>
       </div>
     </Canvas>
   );
@@ -731,17 +754,22 @@ export function Footer() {
           {/* Navigare col */}
           <div style={{ flex: 1, paddingLeft: 80 }}>
             <p style={{ fontFamily: "'Nunito Sans',sans-serif", fontWeight: 700, fontSize: 12, color: '#5ca148', textTransform: 'uppercase', letterSpacing: '1.2px', marginBottom: 20 }}>Navigare</p>
-            {['Acasă', 'Activități', 'Beneficii', 'Valori'].map(l => (
-              <a key={l} href="#" style={{ display: 'block', fontFamily: "'Inter',sans-serif", fontWeight: 500, fontSize: 14, lineHeight: '21px', color: '#f4f0cd', marginBottom: 12 }}>{l}</a>
+            {[
+              { label: 'Acasă',      href: '/' },
+              { label: 'Activități', href: '#experiente' },
+              { label: 'Beneficii',  href: '#beneficii' },
+              { label: 'Valori',     href: '#valori' },
+            ].map(({ label, href }) => (
+              <a key={label} href={href} style={{ display: 'block', fontFamily: "'Inter',sans-serif", fontWeight: 500, fontSize: 14, lineHeight: '21px', color: '#f4f0cd', marginBottom: 12 }}>{label}</a>
             ))}
           </div>
 
           {/* Contact col */}
           <div style={{ flex: 1, paddingLeft: 80 }}>
             <p style={{ fontFamily: "'Nunito Sans',sans-serif", fontWeight: 700, fontSize: 12, color: '#5ca148', textTransform: 'uppercase', letterSpacing: '1.2px', marginBottom: 20 }}>Contact</p>
-            {[{ t: 'Salut@pilgrims.ro', c: 'rgba(244,240,205,0.9)' }, { t: '0769 037 702', c: '#f4f0cd' }, { t: 'Timișoara, România', c: '#f4f0cd' }].map(({ t, c }) => (
-              <p key={t} style={{ fontFamily: "'Inter',sans-serif", fontWeight: 500, fontSize: 14, lineHeight: '21px', color: c, marginBottom: 12 }}>{t}</p>
-            ))}
+            <a href="mailto:infocontact.pilgrims@gmail.com" style={{ display: 'block', fontFamily: "'Inter',sans-serif", fontWeight: 500, fontSize: 14, lineHeight: '21px', color: 'rgba(244,240,205,0.9)', marginBottom: 12 }}>infocontact.pilgrims@gmail.com</a>
+            <a href="tel:0769037702" style={{ display: 'block', fontFamily: "'Inter',sans-serif", fontWeight: 500, fontSize: 14, lineHeight: '21px', color: '#f4f0cd', marginBottom: 12 }}>0769 037 702</a>
+            <p style={{ fontFamily: "'Inter',sans-serif", fontWeight: 500, fontSize: 14, lineHeight: '21px', color: '#f4f0cd', marginBottom: 12 }}>Timișoara, România</p>
           </div>
 
           {/* Social col */}
@@ -751,7 +779,6 @@ export function Footer() {
               {[
                 { Icon: Facebook,  href: 'https://www.facebook.com/PilgrimsTM' },
                 { Icon: Instagram, href: 'https://www.instagram.com/pilgrims_ro/' },
-                { Icon: Music2,    href: '#' },
               ].map(({ Icon, href }) => (
                 <a key={href} href={href} target="_blank" rel="noopener noreferrer" style={{
                   width: 40, height: 40, backgroundColor: '#0e272c',
@@ -761,6 +788,20 @@ export function Footer() {
                   <Icon size={18} color="#f4f0cd" strokeWidth={1.5} />
                 </a>
               ))}
+              <a href="https://www.tiktok.com/@pilgrims.ro?_r=1&_t=ZN-95auEazNbE6" target="_blank" rel="noopener noreferrer" style={{
+                width: 40, height: 40, backgroundColor: '#0e272c',
+                border: '1px solid rgba(66,126,62,0.3)', borderRadius: 20,
+                display: 'flex', alignItems: 'center', justifyContent: 'center',
+              }}>
+                <TikTokIcon size={18} />
+              </a>
+              <a href="https://youtube.com/@pilgrimsro?si=AUmqTSiVuWvnr6V5" target="_blank" rel="noopener noreferrer" style={{
+                width: 40, height: 40, backgroundColor: '#0e272c',
+                border: '1px solid rgba(66,126,62,0.3)', borderRadius: 20,
+                display: 'flex', alignItems: 'center', justifyContent: 'center',
+              }}>
+                <YouTubeIcon size={18} />
+              </a>
             </div>
           </div>
         </div>
