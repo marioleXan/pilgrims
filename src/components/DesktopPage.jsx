@@ -599,7 +599,7 @@ const TESTIMONIALS = [
 export function Section7() {
   return (
     <Canvas
-      height={932}
+      height={783}
       style={{
         background: 'linear-gradient(10.45deg, #427e3e 5.49%, #0e272c 68.77%)',
         borderTop: '1px solid rgba(244,240,205,0.15)',
