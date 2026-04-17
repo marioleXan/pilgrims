@@ -812,9 +812,8 @@ export function Footer() {
             © 2026 Pilgrims Education. Toate drepturile rezervate.
           </span>
           <div style={{ display: 'flex', gap: 40 }}>
-            {['Termeni și condiții', 'Politica de confidențialitate'].map(l => (
-              <a key={l} href="#" style={{ fontFamily: "'Inter',sans-serif", fontWeight: 500, fontSize: 12, color: 'rgba(255,255,255,0.6)', textTransform: 'uppercase', letterSpacing: '0.6px' }}>{l}</a>
-            ))}
+            <a href="/legal#termeni" style={{ fontFamily: "'Inter',sans-serif", fontWeight: 500, fontSize: 12, color: 'rgba(255,255,255,0.6)', textTransform: 'uppercase', letterSpacing: '0.6px' }}>Termeni și condiții</a>
+            <a href="/legal#confidentialitate" style={{ fontFamily: "'Inter',sans-serif", fontWeight: 500, fontSize: 12, color: 'rgba(255,255,255,0.6)', textTransform: 'uppercase', letterSpacing: '0.6px' }}>Politica de confidențialitate</a>
           </div>
         </div>
       </div>

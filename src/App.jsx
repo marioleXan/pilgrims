@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import DesktopPage from './components/DesktopPage';
 import MobilePage  from './components/MobilePage';
+import LegalPage   from './components/LegalPage';
 
-export default function App() {
+function HomePage() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   useEffect(() => {
     const fn = () => setIsMobile(window.innerWidth < 768);
@@ -10,4 +12,15 @@ export default function App() {
     return () => window.removeEventListener('resize', fn);
   }, []);
   return isMobile ? <MobilePage /> : <DesktopPage />;
+}
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/legal" element={<LegalPage />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }

@@ -523,9 +523,8 @@ export default function MobilePage() {
           </a>
         </div>
         <div style={{ borderTop: '1px solid rgba(244,240,205,0.1)', paddingTop: 16 }}>
-          {['Termeni și condiții', 'Politica de confidențialitate'].map(l => (
-            <p key={l} style={{ textAlign: 'center', ...s.inter(500, 10, '16px', '#bdc1ca'), textTransform: 'uppercase', letterSpacing: '0.6px', marginBottom: 8 }}>{l}</p>
-          ))}
+          <a href="/legal#termeni" style={{ display: 'block', textAlign: 'center', ...s.inter(500, 10, '16px', '#bdc1ca'), textTransform: 'uppercase', letterSpacing: '0.6px', marginBottom: 8 }}>Termeni și condiții</a>
+          <a href="/legal#confidentialitate" style={{ display: 'block', textAlign: 'center', ...s.inter(500, 10, '16px', '#bdc1ca'), textTransform: 'uppercase', letterSpacing: '0.6px', marginBottom: 8 }}>Politica de confidențialitate</a>
           <p style={{ textAlign: 'center', ...s.inter(500, 10, '16px', '#bdc1ca'), textTransform: 'uppercase', letterSpacing: '0.6px' }}>
             © 2026 Pilgrims Education. Toate drepturile rezervate.
           </p>
